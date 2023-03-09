@@ -28,3 +28,8 @@
   (prog1
       (clack:stop *handler*)
     (setf *handler* nil)))
+
+(defun restart (pt)
+  (website:stop)
+  (ql:quickload :website)
+  (website:start :port pt))

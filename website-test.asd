@@ -1,7 +1,7 @@
 (defsystem "website-test"
   :defsystem-depends-on ("prove-asdf")
   :author "Lukhell"
-  :license ""
+  :license "GPL-3"
   :depends-on ("website"
                "prove")
   :components ((:module "tests"

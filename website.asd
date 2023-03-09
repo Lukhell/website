@@ -1,7 +1,7 @@
 (defsystem "website"
   :version "0.1.0"
   :author "Lukhell"
-  :license ""
+  :license "GPL-3"
   :depends-on ("clack"
                "lack"
                "caveman2"
@@ -25,5 +25,5 @@
                  (:file "view" :depends-on ("config"))
                  (:file "db" :depends-on ("config"))
                  (:file "config"))))
-  :description ""
+  :description "My lispy blog."
   :in-order-to ((test-op (test-op "website-test"))))

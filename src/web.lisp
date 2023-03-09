@@ -26,6 +26,9 @@
 (defroute "/" ()
   (render #P"index.html"))
 
+(defroute "/about" ()
+  (render #P"about.html"))
+
 ;;
 ;; Error pages
 
